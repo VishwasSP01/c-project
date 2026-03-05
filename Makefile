@@ -1,5 +1,5 @@
-ABC.exe: main.o big3.o fact.o rev.o
-	gcc -o ABC.exe main.o big3.o fact.o rev.o
+ABC.exe: main.o big3.o fact.o rev.o palin.o
+	gcc -o ABC.exe main.o big3.o fact.o rev.o palin.o
 main.o: main.c
 	gcc -c main.c
 big3.o: big3.c
@@ -8,3 +8,5 @@ fact.o: fact.c
 	gcc -c fact.c
 rev.o: rev.c
 	gcc -c rev.c
+palin.o: palin.c
+	gcc -c palin.c
